@@ -1,0 +1,196 @@
+/* overall box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17;
+}
+
+/* Header/Title */
+header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 250px;
+  text-align: center;
+  background: #fff;;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* video in header */
+header video{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+/* h1 in header */
+header h1 {
+  font-family: Verdana;
+  padding: 25px;
+  margin: 25px;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* h2 in header */
+header h2 {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 25px;
+}
+
+/* style for the top navigation bar */
+nav > ul{
+  overflow: hidden;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* style for the topnav links */
+nav > ul > li{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+}
+
+/* for changing color on hover */
+nav li:hover {
+  background-color: #ddd;
+  color: #000;
+  text-decoration: none;
+}
+
+/* a*/
+a {
+  font-family: arial;
+  text-decoration: none;
+  color: #00008b;
+}
+
+/* p */
+p {
+  font-family: arial;
+}
+
+/* a in list */
+li > a {
+  color: white;
+}
+
+/* Images */
+img {
+  width: 50%;
+  height: 50%;
+}
+
+img.left {
+  width: 75%;
+  height: 75%;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: #f1f1f1;
+  padding-left: 2em;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 3%;
+  margin-top: 3%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* form */
+form {
+  display: block;
+  margin: 1%;
+  padding: 1%;
+  max-width: 100%;
+}
+
+/* form fieldset */
+ form > fieldset > * {
+   display: block;
+   text-align: left;
+   max-width: 100%;
+ }
+
+/* form textarea */
+ textarea {
+    font-family: arial;
+    resize: none;
+    width: 100%;
+ }
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* for responsive layout */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* for responsive layout */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}

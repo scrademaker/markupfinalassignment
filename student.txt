@@ -1,0 +1,4 @@
+Student name: Santino C. Rademaker
+Student number: 643463
+Student class: 1ITB
+Github: https://github.com/scrademaker/markupfinalassignment
